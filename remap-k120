@@ -1,0 +1,86 @@
+#! /bin/bash
+# Use hidutil to remap PC keyboard keys for Mac
+
+# Resources
+# https://github.com/snosrap/xpc_set_event_stream_handler
+# https://developer.apple.com/library/archive/technotes/tn2450/_index.html
+# https://www.usb.org/sites/default/files/documents/hut1_12v2.pdf (page53)
+# https://developer.apple.com/documentation/uikit/uikeyboardhidusage
+# https://eastmanreference.com/complete-list-of-applescript-key-codes
+# https://www.usb.org/sites/default/files/hut1_21_0.pdf#page=118
+# https://qa.emptyq.net/q?id=c95a5415-82f8-45cc-98c4-c97f869891f1
+# https://www.maven.de/2018/05/more_keyboards/
+
+# Wait for 1 second otherwise we run too soon.
+sleep 1
+
+# Logitech K120 - Vendor 0x46d, Product 0xc31c
+
+# 0x700000039 Keyboard Caps Lock
+# 0x700000053 Keypad Num Lock and Clear
+# 0x700000046 Print Screen
+# 0x700000047 Brightness Down
+# 0x700000048 Brightness Up
+# 0x70000007F Mute
+# 0x700000080 Volume Up
+# 0x700000081 Volume Down
+# 0xC000000B0 Play pause
+# 0xC000000B5 Media Next
+# 0xC000000B6 Media Previous
+# 0xC000000B8 Media Eject
+
+# 0x700000042 F9           -> 0xC000000B6 Media Previous
+# 0x700000043 F10          -> 0xC000000B5 Media Next
+# 0x700000044 F11          -> 0x700000081 Volume Down
+# 0x700000045 F12          -> 0x700000080 Volume Up
+# 0x700000046 Print Screen -> 0xC000000B0 Play/Pause
+
+/usr/bin/hidutil property \
+  --matching \
+'[
+  {"VendorID":0x46d,"ProductID":0xc31c}
+]' \
+  --set \
+'{
+  "UserKeyMapping":
+    [
+      {
+        "HIDKeyboardModifierMappingSrc": 0x7000000E2,
+        "HIDKeyboardModifierMappingDst": 0x7000000E3
+      },
+      {
+        "HIDKeyboardModifierMappingSrc": 0x7000000E3,
+        "HIDKeyboardModifierMappingDst": 0x7000000E2
+      },
+      {
+        "HIDKeyboardModifierMappingSrc": 0x7000000E6,
+        "HIDKeyboardModifierMappingDst": 0x7000000E7
+      },
+      {
+        "HIDKeyboardModifierMappingSrc": 0x7000000E7,
+        "HIDKeyboardModifierMappingDst": 0x7000000E6
+      },
+      {
+        "HIDKeyboardModifierMappingSrc": 0x700000042,
+        "HIDKeyboardModifierMappingDst": 0xC000000B6
+      },
+      {
+        "HIDKeyboardModifierMappingSrc": 0x700000043,
+        "HIDKeyboardModifierMappingDst": 0xC000000B5
+      },
+      {
+        "HIDKeyboardModifierMappingSrc": 0x700000044,
+        "HIDKeyboardModifierMappingDst": 0x700000081
+      },
+      {
+        "HIDKeyboardModifierMappingSrc": 0x700000045,
+        "HIDKeyboardModifierMappingDst": 0x700000080
+      },
+      {
+        "HIDKeyboardModifierMappingSrc": 0x700000046,
+        "HIDKeyboardModifierMappingDst": 0xC000000B0
+      }
+    ]
+}' > /dev/null
+
+exit 0

@@ -1,0 +1,23 @@
+#! /bin/bash
+# Reset keyboard mappings to defaults
+
+/usr/bin/hidutil property \
+  --matching \
+'[
+  {"VendorID":0x45e,"ProductID":0x001d},
+  {"VendorID":0x45e,"ProductID":0x00dd},
+  {"VendorID":0x461,"ProductID":0x4e04},
+  {"VendorID":0x46d,"ProductID":0xc52b},
+  {"VendorID":0x4b4,"ProductID":0x120d},
+  {"VendorID":0x4d9,"ProductID":0x4545},
+  {"VendorID":0xa5c,"ProductID":0x8502},
+  {"VendorID":0xa81,"ProductID":0x0205}
+]' \
+  --set \
+'{
+  "UserKeyMapping":
+    [
+    ]
+}' > /dev/null
+
+exit 0

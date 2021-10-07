@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Disabled</key>
+	<false/>
+	<key>KeepAlive</key>
+	<false/>
+	<key>Label</key>
+	<string>com.adamkdean.remap-k120</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/bin/xpc_set_event_stream_handler</string>
+		<string>/Users/adam/bin/remap-k120</string>
+		<string>/bin/bash -c "sleep 5"</string>
+	</array>
+	<key>LaunchEvents</key>
+	<dict>
+		<key>com.apple.iokit.matching</key>
+		<dict>
+			<!-- Logitech K120 - Vendor 0x46d, Product 0xc31c -->
+			<key>com.adamkdean.KeyboardAttach.LogitechK120</key>
+			<dict>
+				<key>IOProviderClass</key>
+				<string>IOUSBDevice</string>
+				<key>idVendor</key>
+				<integer>1133</integer>
+				<key>idProduct</key>
+				<integer>49948</integer>
+				<key>IOMatchLaunchStream</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>StandardOutPath</key>
+	<string>/Users/adam/logs/keyboard-mapping/stdout.log</string>
+	<key>StandardErrorPath</key>
+	<string>/Users/adam/logs/keyboard-mapping/stderr.log</string>
+</dict>
+</plist>
