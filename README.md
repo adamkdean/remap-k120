@@ -1,6 +1,6 @@
 # keymap-k120
 
-I have long used Logitech K120 keyboards for workstations, but since I moved from using a MacBook everyday to using an iMac Pro every day, I've struggled to find a keyboard that matches the K120. It's not particularly special, but it's comfortable, cheap, easily replacable, and quiet. Unfortunately, it doesn't work very well with MacOS, especially not out of the box.
+I have long used Logitech K120 keyboards for non-Mac workstations, but since I moved from using a MacBook everyday to using an iMac Pro every day, I've struggled to find a keyboard that matches the K120. It's not particularly special, but it's comfortable, cheap, easily replacable, and quiet. Unfortunately, it doesn't work very well with MacOS, especially not out of the box.
 
 With help from friends near and far, and all their previous work, I've been able to finally solve my keyboard misery.
 
