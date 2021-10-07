@@ -1,0 +1,3 @@
+[submodule "xpc_set_event_stream_handler"]
+	path = xpc_set_event_stream_handler
+	url = https://github.com/snosrap/xpc_set_event_stream_handler
