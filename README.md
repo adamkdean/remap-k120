@@ -8,7 +8,9 @@ With help from friends near and far, and all their previous work, I've been able
 
 `remap-k120` swaps the left and right windows & alt keys to option & command keys, along with swapping F9 onwards. I place this file in `/home/adam/bin/remap-k120`.
 
-`F9` becomes previous track, `F10` becomes next track, `F11` becomes volume down, and `F12` becomes volume up.
+`F9` becomes previous track, `F10` becomes next track.
+
+ `F11` becomes volume down, and `F12` becomes volume up.
 
 `Print Screen` becomes play/pause.
 
@@ -43,6 +45,12 @@ If you use this, be sure to update paths within this file:
 ## Resetting
 
 You can easily reset the mappings using the `default-mapping` file provided by Martin.
+
+## Physical alterations
+
+In order to make my life a little better, I used a label maker to adjust the keyboard slightly.
+
+![preview](image.jpg)
 
 ## Thanks to
 
