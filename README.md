@@ -54,7 +54,7 @@ In order to make my life a little better, I used a label maker to adjust the key
 
 ## Thanks to
 
-- [Martin Thorpe](https://www.thorpe.org.uk) without whom I'd have been totally lost
+- [Martin Thorpe](https://twitter.com/met24fly) without whom I'd have been totally lost
 - [Ford Parsons](https://github.com/snosrap) for his work on xpc_set_event_stream_handler
 - [Daniel Vollmer](https://www.maven.de/2018/05/more_keyboards/) whose work allowed me to solve the media key issue
 
