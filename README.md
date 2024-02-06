@@ -68,3 +68,14 @@ In order to make my life a little better, I used a label maker to adjust the key
 - https://www.usb.org/sites/default/files/hut1_21_0.pdf#page=118
 - https://qa.emptyq.net/q?id=c95a5415-82f8-45cc-98c4-c97f869891f1
 - https://www.maven.de/2018/05/more_keyboards/
+
+# Keywords
+
+To help people find this, here are some keywords and associated searches:
+
+- How to use Logitech K120 windows keyboard on Mac?
+- Is Logitech K120 compatible with a Mac?
+- Logitech K120 Mac
+- Can I use Logitech K120 with Mac?
+- Logitech K120
+- Mac, MacOS, OSX
