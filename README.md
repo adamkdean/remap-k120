@@ -6,7 +6,7 @@ With help from friends near and far, and all their previous work, I've been able
 
 ## Remapped keys
 
-`remap-k120` swaps the left and right windows & alt keys to option & command keys, along with swapping F9 onwards. I place this file in `/home/adam/bin/remap-k120`.
+`remap-k120` swaps the left and right windows & alt keys to option & command keys, along with swapping F9 onwards. I place this file in `/Users/adam/bin/remap-k120`.
 
 `F9` becomes previous track, `F10` becomes next track.
 
