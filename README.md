@@ -1,3 +1,5 @@
+> **Note: I no longer use this for my k120.** Since Sequoia this hasn't worked properly (thanks Apple!) but fortunately, there is an easier way. [Karabiner-Elements](https://karabiner-elements.pqrs.org/) is free and works perfectly with minimal setup, and is much simpler to work with. With Karabiner, any keyboard can now be used.
+
 # keymap-k120
 
 I have long used Logitech K120 keyboards for non-Mac workstations, but since I moved from using a MacBook everyday to using an iMac Pro every day, I've struggled to find a keyboard that matches the K120. It's not particularly special, but it's comfortable, cheap, easily replacable, and quiet. Unfortunately, it doesn't work very well with MacOS, especially not out of the box.
